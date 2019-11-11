@@ -1,0 +1,563 @@
+<html !DOCTYPE>
+     <head>
+          <meta charset="UTF 8"/>
+          <meta name="viewport" content="width=device-width, initial-scale=1" />
+          <link rel="stylesheet" type="text/css" href="./main.css"/>
+          <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css">
+          <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" >
+          <title>Bảo hiểm AIA</title>
+          <script>
+               function ShowSidebar() {
+                 document.getElementById("siderbar").classList.toggle("active");
+               }
+               function showMobileNav(){
+                  //  document.querySelector(".nav-mobile__toggle")
+                  let bgNav = document.querySelector(".nav-modile__background");
+                  let  listNav = document.querySelector(".nav-mobile__list");
+                  console.log(bgNav);
+                  if(bgNav.hidden === true){
+                       bgNav.hidden = false;
+                       listNav.hidden = false;
+                  }
+                  else{
+                       bgNav.hidden = true;
+                       listNav.hidden = true;
+                  }
+               }
+               function shoes(){
+                    console.log("angsg");
+               }
+          </script>
+     </head>
+     <body>
+          <!-- NAVIGATION -->
+          <nav class="nav" id="home-nav">
+               <div class="nav__logo">
+                   <a href="index.html">
+                    <img src="../image/logoaia.png" />
+               </a>
+               </div>
+               <ul class="nav__list">
+                    <li class="nav__item">
+                         <a href="sanpham.html" class="nav__link">Sản phẩm</a>
+                         <div class="nav-sub">
+                              <div class="nav-sub__right">
+                                   <h2> Sản phẩm</h2>
+                                   <p> Chọn sản phẩm và dịch vụ phù hợp với bạn và gia đình bạn</p>
+                              </div>
+                              <ul class="nav-sub__list">
+                                   <div class="nav-sub__persional">
+                                        <h3>Cá nhân</h3>
+                                        <li class="nav-sub__item">
+                                             <a href="sanpham.html" class="nav-sub__link">An toàn tài chính</a>
+                                   </li>
+                                   <li class="nav-sub__item">
+                                        <a class="nav-sub__link" href="sanpham.html">
+                                             Đảm bảo tương lai học vấn
+                                        </a>
+                                   </li>
+                                   <li class="nav-sub__item">
+                                        <a class="nav-sub__link" href="sanpham.html">
+                                             Tiết kiệm và đầu tư
+                                        </a>
+                                   </li>
+                                   <li class="nav-sub__item">
+                                        <a class="nav-sub__link" href="sanpham.html">
+                                             Bảo hiểm rủ do và tai nạn
+                                        </a>
+                                        </li>
+                                        <li class="nav-sub__item">
+                                             <a class="nav-sub__link" href="sanpham.html">
+                                             Bảo hiểm sức khỏe 
+                                             </a>
+                                        </li>
+                                        <li class="nav-sub__item">
+                                             <a class="nav-sub__link" href="sanpham.html">
+                                             Kế hoặch hưu trí
+                                             </a>
+                                        </li>
+                                   </div>
+                                   <div class="nav-sub__orgrani">
+                                        <h3>Các tổ chức</h3>
+                                        <li class="nav-sub__item">
+                                             <a class="nav-sub__link" href="sanpham.html">
+                                             phúc lợi nhân viên
+                                             </a>
+                                        </li>
+                                        <li class="nav-sub__item">
+                                             <a class="nav-sub__link" href="sanpham.html">
+                                             Bảo hiểm doanh nghiệp
+                                             </a>
+                                        </li>
+                                   </div>
+                              </ul>
+                         </div>
+                         <li class="nav__item">
+                              <a class="nav__link" href="gioithieuAIA.html">Giới thiệu về AIA</a>
+                              <div class="nav-sub">
+                                        <div class="nav-sub__right">
+                                             <h2> Giới thiệu về AIA</h2>
+                                             <p> Đã và đang phục vụ hơn hàng triệu người khu vực đông nam á</p>
+                                        </div>
+                                        <ul class="nav-sub__list">
+                                        <div class="nav-sub__persional">
+                                             <h3>Công ty</h3>
+                                             <li class="nav-sub__item">
+                                                  <a class="nav-sub__link" href="gioithieuAIA.html">Đội ngũ lãnh đạo</a>
+                                             </li>
+                                             <li class="nav-sub__item">
+                                                  <a class="nav-sub__link" href="gioithieuAIA.html">
+                                                       Hợp tác và kinh doanh
+                                                  </a>
+                                             </li>
+                                             <li class="nav-sub__item">
+                                             <a class="nav-sub__link" href="gioithieuAIA.html">
+                                                  Sáng tạo và khác biệt
+                                             </a>
+                                             </li>
+                                             <li class="nav-sub__item">
+                                             <a class="nav-sub__link" href="gioithieuAIA.html">
+                                                  Môi trường năng động
+                                             </a>
+                                             </li>
+                                        </div>
+                                        <div class="nav-sub__orgrani">
+                                             <h3>Đánh giá</h3>
+                                             <li class="nav-sub__item">
+                                                  <a class="nav-sub__link" href="gioithieuAIA.html">
+                                                       Chất lượng dịch vụ
+                                                  </a>
+                                             </li>
+                                             <li class="nav-sub__item">
+                                                  <a class="nav-sub__link" href="gioithieuAIA.html">
+                                                       Kinh nghiệm làm việc
+                                                  </a>
+                                             </li>
+                                        </div>
+                                        </ul>
+                              </div>
+                         </li>
+                         <li class="nav__item">
+                              <a class="nav__link" href="thanhtoan.html">Dịch vụ khác hàng</a>
+                              <div class="nav-sub">
+                                        <div class="nav-sub__right">
+                                             <h2> Dịch vụ khách hàng</h2>
+                                             <p>Chúng tôi luôn nỗ lực đáp ứng nhu cầu ngày càng cao của khách hàng</p>
+                                        </div>
+                                        <ul class="nav-sub__list">
+                                        <div class="nav-sub__persional">
+                                             <h3>Vấn đề dịch vụ</h3>
+                                             <li class="nav-sub__item">
+                                                  <a class="nav-sub__link" href="thanhtoan.html">Nhưng câu hỏi về AIA</a>
+                                             </li>
+                                             <li class="nav-sub__item">
+                                                  <a class="nav-sub__link" href="thanhtoan.html">
+                                                       Các thủ tục liên quan
+                                                  </a>
+                                             </li>
+                                             <li class="nav-sub__item">
+                                             <a class="nav-sub__link" href="thanhtoan.html">
+                                                  Biểu mẫu
+                                             </a>
+                                             </li>
+                                             <li class="nav-sub__item">
+                                             <a class="nav-sub__link" href="thanhtoan.html">
+                                                  Trách nhiệm và quyền lợi
+                                             </a>
+                                             </li>
+                                        </div>
+                                        <div class="nav-sub__orgrani">
+                                             <h3>Thanh toán</h3>
+                                             <li class="nav-sub__item">
+                                                  <a class="nav-sub__link" href="thanhtoan.html">
+                                                       Giao dịch điện tử
+                                                  </a>
+                                             </li>
+                                             <li class="nav-sub__item">
+                                                  <a class="nav-sub__link" href="thanhtoan.html">
+                                                       Thanh toán trực tuyến
+                                                  </a>
+                                             </li>
+                                        </div>
+                                        </ul>
+                              </div>
+                         </li>
+                         <li class="nav__item">
+                              <a class="nav__link" href="./quanly.html">Profile</a>
+                              <div class="nav-sub">
+                                        <div class="nav-sub__right">
+                                             <h2>Điều bạn quan tâm</h2>
+                                             <p> Điều bạn quan tâm nhất là gì</p>
+                                        </div>
+                                        <ul class="nav-sub__list">
+                                        <div class="nav-sub__persional">
+                                             <h3>Cá nhân</h3>
+                                             <li class="nav-sub__item">
+                                                  <a class="nav-sub__link" >Tương lai con trẻ</a>
+                                             </li>
+                                             <li class="nav-sub__item">
+                                                  <a class="nav-sub__link">
+                                                       Tạo dựng tài sản
+                                                  </a>
+                                             </li>
+                                             <li class="nav-sub__item">
+                                             <a class="nav-sub__link">
+                                                  Chăm sóc sức khỏe
+                                             </a>
+                                             </li>
+                                             <li class="nav-sub__item">
+                                             <a class="nav-sub__link">
+                                                  Vượt qua biến cố
+                                             </a>
+                                             </li>
+                                        </div>
+                                        </ul>
+                              </div>
+                          </li>
+                         <li class="nav__item">
+                              <a class="nav__link" href="login.html">Đăng nhập</a>
+                         </li>
+                    </li>
+               </ul>
+               <div class="nav__search">
+                         <button type="button" class="btn__icon" onclick="shoes()"> <i class="fas fa-search"></i></button>
+                         <button type="button" class="btn__icon"><i class="fas fa-users"></i></button>
+               </div>
+          </nav>
+          <!-- MODBLE-NAVIGATION -->
+          <nav class="nav-mobile">
+                <div class="nav-mobile__toggle">
+                     <span class="nav-mobile__toggle__icon" onclick="showMobileNav()"></span>
+                </div>
+                <div class="nav-modile__background" hidden></div>
+                <ul class="nav-mobile__list" hidden>
+                     <li class="nav-mobile__item">
+                          <a class="nav-mobile__link" href="sanpham.html">Sản phẩm</a>
+                     </li>
+                     <li class="nav-mobile__item">
+                         <a class="nav-mobile__link" href="thanhtoan.html">Dịch vụ khác hàng</a>
+                    </li>
+                    <li class="nav-mobile__item">
+                         <a href="login.html" class="nav-mobile__link">Đăng nhập</a>
+                    </li>
+                </ul>
+          </nav>
+          <!-- Sidebar -->
+           <div id="siderbar">
+                 <div class="toggle" onClick="ShowSidebar()">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                 </div>
+                 <ul class="side__list">
+                         <form action="#" class="search">
+                              <input type="text" placeholder="Search" class="search__input" />
+                              <button class="search__button">
+                                  <i class="fas fa-search"></i>
+                              </button>
+                          </form>
+                      <li class="side__item">
+                         <a class="side__link">Khu vực</a>
+                         <ul>
+                              <li>Hà Nội</li>
+                              <li>Đà Nắng</li>
+                              <li>Hồ Chí Minh</li>
+                         </ul>
+                     </li>
+                     <li class="side__item">
+                         <a class="side__link">When</a>
+                      </li>
+                 </ul>
+           </div>
+          <!--slider -->
+          <div class="bd-example">
+               <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                    <div class="carousel-item active">
+                         <img src="../image/slider1.jpeg" class="d-block w-100" alt="...">
+                         <div class="carousel-caption d-none d-md-block">
+                         <h5>CHÚNG TÔI LUÔN ĐỒNG HÀNH CÙNG BẠN</h5>
+                         <p>Cùng bạn xây dựng các giải pháp tài chính linh hoạt và vững chắc để bảo vệ bản thân và những người thân yêu.</p>
+                         </div>
+                    </div>
+                    <div class="carousel-item">
+                         <img src="../image/slider2.jpeg" class="d-block w-100" alt="...">
+                         <div class="carousel-caption d-none d-md-block">
+                         <h5>ĐIỀU BẠN QUAN TÂM LÀ GÌ?</h5>
+                         <p>chúng tôi hiểu điều bạn quan tâm và những khó khăn bạn gặp phải để cùng bạn chuẩn bị kế hoạch cho một tương lai tươi sáng hơn.</p>
+                         </div>
+                    </div>
+                    <div class="carousel-item">
+                         <img src="../image/slider3.jpeg" class="d-block w-100" alt="...">
+                         <div class="carousel-caption d-none d-md-block">
+                         <h5>CÙNG AIA TẠO NÊN SỰ KHÁC BIỆT</h5>
+                         <p>Chúng tôi luôn tìm kiếm những người năng động, tài năng và có hoài bão để đồng hành cùng AIA.</p>
+                         </div>
+                    </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                    </a>
+               </div>
+          </div>
+          <!-- thong tin -->
+          <section id="section-intro">
+                <div class="section__title">
+                     <h2 class="title title--green">Giải Pháp Đáp ứng nhu cầu của bạn</h2>
+                </div>
+                <div class="intro__content">
+                     <div class="intro__text">
+                          <h3 class="title title--2">Trách nhiệm của chúng tôi</h3>
+                          <p class="paragrap">Trọng tâm của chúng tôi là cung cấp cho khách hàng các giải pháp
+                                phù hợp để đáp ứng nhu cầu cá nhân của họ và làm như vậy giúp
+                                 họ giải quyết mọi thách thức trong cuộc sống.
+                          </p>
+                          <h3>Cam kết với khách hàng</h3>
+                          <p class="paragrap">AIA nhận ra tất cả mọi người có những nhu cầu khác nhau ở các giai đoạn khác nhau của cuộc sống. AIA 
+                               cam kết giúp bạn đáp ứng các nhu cầu và mục tiêu tài chính của bạn với
+                                một loạt các bảo vệ sức khỏe và cuộc sống và các sản phẩm tiết kiệm dài hạn.</p>
+                     </div>
+                     <div class="intro__img">
+                          <img src="../image/intro2.jpg" class="intro__img__photo intro__img--1" />
+                          <img src="../image/intro1.jpg" class="intro__img__photo intro__img--2" />
+                          <img src="../image/intro3.jpg" class="intro__img__photo intro__img--3" />
+                     </div>
+                </div>
+          </section>
+          <!-- SAN PHAM -->
+          <section class="service">
+                    <div class="section__title">
+                         <h2 class="title title--green">Dịch vụ của chúng tôi</h2>
+                    </div>
+                    <div class="container">
+                 <div class="row">
+                     <div class="col-md-4">
+                          <div class="service__card">
+                           <div class="service__img service__img--1"></div>
+                           <h2 class="service__name">
+                                <span class="service__name--1">An Toàn Tài Chính</span>
+                           </h2>
+                           <div class="service__list">
+                                <li class="service__item">
+                                     Tài chính vững vàng
+                                </li>
+                                <li class="service__item">
+                                      Đảm bảo tài chính
+                                </li>
+                                <li class="service__item">
+                                    An toàn tài chính
+                               </li>
+                           </div>
+                           <div class="service__bottom">
+                                   <button type="button" class="btncard">Tư Vấn</button>
+                           </div>
+                         </div>
+                     </div>
+                     <div class="col-md-4">
+                              <div class="service__card">
+                               <div class="service__img service__img--2"></div>
+                               <h2 class="service__name">
+                                   <span class="service__name--2">Bảo hiểm tai nạn</span>
+                              </h2>
+                               <div class="service__list">
+                                    <li class="service__item">
+                                         Giúp bạn vượt qua
+                                    </li>
+                                    <li class="service__item">
+                                          Hỗ trợ bạn
+                                    </li>
+                                    <li class="service__item">
+                                          Hạn chế các rủ do
+                                   </li>
+                               </div>
+                               <div class="service__bottom">
+                                       <button type="button" class="btncard">Tư Vấn</button>
+                               </div>
+                             </div>
+                         </div>
+                         <div class="col-md-4">
+                                   <div class="service__card">
+                                    <div class="service__img service__img--3"></div>
+                                    <h2 class="service__name">
+                                        <span class="service__name--3">Bảo hiểm học vấn</span>
+                                   </h2>
+                                    <div class="service__list">
+                                         <li class="service__item">
+                                              Quyền lợi học vấn
+                                         </li>
+                                         <li class="service__item">
+                                               Quyền lợi sức khỏe
+                                         </li>
+                                         <li class="service__item">
+                                                Và nhiều ưu lãi khác
+                                        </li>
+                                    </div>
+                                    <div class="service__bottom">
+                                            <button type="button" class="btncard">Tư Vấn</button>
+                                    </div>
+                                  </div>
+                              </div>
+                              <div class="col-md-4">
+                                        <div class="service__card">
+                                         <div class="service__img service__img--4"></div>
+                                         <h2 class="service__name">
+                                             <span class="service__name--4">Tiết kiệm và đầu tư</span>
+                                        </h2>
+                                         <div class="service__list">
+                                              <li class="service__item">
+                                                   Linh hoạt và chủ đông
+                                              </li>
+                                              <li class="service__item">
+                                                    Đảm bảo tài chính
+                                              </li>
+                                              <li class="service__item">
+                                                    Giảm thiểu rủ do
+                                             </li>
+                                         </div>
+                                         <div class="service__bottom">
+                                                 <button type="button" class="btncard">Tư Vấn</button>
+                                         </div>
+                                       </div>
+                                   </div>
+                                   <div class="col-md-4">
+                                             <div class="service__card">
+                                              <div class="service__img service__img--5"></div>
+                                              <h2 class="service__name">
+                                                  <span class="service__name--5">Bảo hiểm sức khỏe</span>
+                                             </h2>
+                                              <div class="service__list">
+                                                   <li class="service__item">
+                                                        Có nhiều quyền lợi...
+                                                   </li>
+                                                   <li class="service__item">
+                                                         Duy trì tài chính
+                                                   </li>
+                                                   <li class="service__item">
+                                                         Hỗ trợ khi gặp rủ ro
+                                                  </li>
+                                              </div>
+                                              <div class="service__bottom">
+                                                      <button type="button" class="btncard">Tư Vấn</button>
+                                              </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                                  <div class="service__card">
+                                                   <div class="service__img service__img--6"></div>
+                                                   <h2 class="service__name">
+                                                       <span class="service__name--6">Kế hoặch hưu trí</span>
+                                                  </h2>
+                                                   <div class="service__list">
+                                                        <li class="service__item">
+                                                             Đảm bảo tài chính
+                                                        </li>
+                                                        <li class="service__item">
+                                                              Hỗ trợ khách hàng khi gặp sự cố
+                                                        </li>
+                                                        <li class="service__item">
+                                                             Và nhiều ưu đái khác
+                                                       </li>
+                                                   </div>
+                                                   <div class="service__bottom">
+                                                           <button type="button" class="btncard">Tư Vấn</button>
+                                                   </div>
+                                                 </div>
+                                             </div>
+                              <div class="section__title">
+                                   <a href="#" class="btt btt__primary">Xem thêm</a>
+                              </div>
+               </div>
+               </div>
+          </section>
+          <!-- STORY -->
+          <section class="story">
+               <div class="section__title">
+                    <h2 class="title title--green">Góc báo chí</h2>
+               </div>
+               <div class="bg-video">
+                    <video class="bg-video__content" autoplay muted loop>
+                         <source src="../image/bg-video.mp4"/>
+                    </video>
+               </div>
+               <div class="story__box">
+                    <div class="story__box__image">
+                          <img src="../image/baotri1.jpg" />
+                    </div>
+                    <div class="story__box__text">
+                         <h5>AIA Việt Nam: Nơi lý tưởng để làm việc</h5>
+                         <p>“Gần 5 năm gắn bó với AIA Việt Nam, tôi tự hào khi cùng với cộng sự của mình tạo ra môi trường mà
+                               ở đó, mọi thành viên của AIA Việt Nam đều được truyền cảm hứng làm việc và mong muốn cống hiến 
+                               hết sức mình”- ông Wayne Besant, Tổng Giám đốc AIA Việt Nam chia sẻ tại buổi họp báo công
+                                bố AIA Việt Nam năm thứ 2 liên tiếp được vinh danh "Môi trường làm việc lý tưởng"</p>
+                    </div>
+               </div>
+               <div class="story__box">
+                         <div class="story__box__image">
+                               <img src="../image/baotri2.jpg" />
+                         </div>
+                         <div class="story__box__text">
+                              <h5>AIA: THƯƠNG HIỆU BẢO HIỂM SỐ 1 CHÂU Á</h5>
+                              <p>Trong cuộc khảo sát “Top 1.000 thương hiệu hàng đầu châu Á 2019” được công bố bởi tạp chí 
+                                   Campaign Asia - Pacific và dựa trên nghiên cứu độc quyền từ Nielsen, người dân châu Á 
+                                   đã đồng lòng bình chọn AIA là thương hiệu thương hiệu bảo hiểm số 1 châu Á bởi những nỗ
+                                    lực trong việc khuyến khích và hỗ trợ mọi người sống "khỏe hơn, lâu hơn, hạnh phúc hơn" của AIA.</p>
+                         </div>
+                    </div>
+                    <div class="text-center">
+                              <a href="/index.html" class="btt btt__primary">Xem thêm</a>
+                        </div>
+          </section>
+          <!-- CONTACT -->
+          <section class="contact">
+                <div class="contact__box">
+                     <form class="contact__form">
+                               <h2 class="title title--green">Liên hệ với chúng tôi</h2>
+                          <div class="form mb-5">
+                               <input class="form__input" type="email" placeholder="Email">
+                               <input class="form__input" type="text" placeholder="Name">
+                               <textarea  rows="5" placeholder="Content"></textarea>
+                          </div>
+                          <a href="#" class="btt btt__primary">Liên hệ</a>
+                     </form>
+                </div>
+          </section>
+          <!-- FOOTER -->
+          <footer class="footer">
+               <div class="footer__logo">
+                    <img src="../image/logoaia.png"/>
+               </div>
+               <div class="footer__content">
+                    <div class="footer__box footer__box--right">
+                             <ul>
+                                  <li>Công ty </li>
+                                  <li>Liên hệ </li>
+                                  <li>Các chính sách </li>
+                                  <li>Điều khoản</li>
+                             </ul>
+                    </div>
+                    <div class="footer__box footer__box--left">
+                          <p>AIA Việt Nam là thành viên của Tập đoàn AIA - tập đoàn bảo 
+                               hiểm nhân thọ độc lập, có nguồn gốc châu Á lớn nhất thế giới được niêm yết.
+                          </p>
+                    </div>
+               </div>
+          </footer>
+        <!-- Link boostrap -->
+          <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" ></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" ></script>
+          <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+     </body>
+</html>

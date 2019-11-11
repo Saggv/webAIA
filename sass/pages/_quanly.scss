@@ -1,0 +1,55 @@
+#quanly-nav{
+    display: flex;
+}
+#nav__list-ql{
+   @include respond(phone){
+       display: none;
+   }
+}
+
+.content-admin{
+    flex:0 0 84%;
+    font-size: 1.6rem;
+    background:#f8f8f8;
+    padding:2rem;
+    box-sizing: border-box;
+    @include respond(phone){
+        padding:0;
+        font-size: 1.3rem;
+        padding-top:5rem;
+    }
+
+}
+.admin__content{
+    width: 100%;
+    background:#fff;
+}
+table{
+    background:#888;
+    border-collapse: collapse;
+}
+thead{
+    background:#888;
+    padding: 1rem;
+}
+tbody{
+    background: #fff;
+}
+tr{
+    padding: 1rem 0;
+}
+td{
+    text-align: center;
+    border:none;
+}
+thead th{
+    padding:1rem 0;
+}
+
+table td {
+    padding: 1rem;
+    border: 1px solid lightgrey;
+}
+table tbody tr:nth-child(even){
+    background:#CCC;
+}

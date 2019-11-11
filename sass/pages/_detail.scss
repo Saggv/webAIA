@@ -1,0 +1,144 @@
+.detail-page{
+    display: flex;
+    @include respond(phone){
+        flex-direction: column;
+    }
+}
+
+.detail-page{
+    &__content{
+         color:#f9f9f9;
+    }
+    &__header{
+        display: flex;
+    }
+    &__gallery{
+        flex:0 0 33.3333%;
+        & img{
+            width:100%;
+            height: 18rem;
+        }
+     }
+     &__box{
+         padding:3rem;
+         background:#f8f8f8;
+         display: flex;
+         color:#333;
+         @include respond(tab-port){
+             flex-direction: column;
+         }
+     }
+}
+.overview{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    background:#fff;
+    box-shadow: 0 5px 1rem rgba(0, 0, 0, 0.5);
+    &__header{
+        color:#333;
+        font-size: 2rem;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+    &__item{
+        padding: 1rem;
+        background:$blue--2;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        &--main{
+            font-size: 2rem;
+        }
+        &--sub{
+            font-size: 1.5rem;
+        }
+    }
+}
+
+// detail box
+.box{
+    &__right{
+        font-size: 1.7rem;
+        background-color:#fff;
+        flex: 0 0 60%;
+        padding: 3rem;
+        margin-right: 3rem;
+        @include respond(tab-port){
+            margin: 0;
+
+        }
+        &__header{
+            border-bottom: 1px solid #f8f8f8;
+            padding-bottom: 3rem;
+        }
+        &__list{
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            border-bottom: 1px solid #f8f8f8;
+            padding-bottom: 3rem;
+            margin-top:1rem;
+            & li{
+                flex: 0 0 50%;
+                margin-bottom: 2rem;
+            }
+            & li i{
+                margin-right: 1rem;
+                color:$blue--2;
+            }
+
+        }
+    }
+    &__left{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 0 3rem;
+        @include respond(tab-port){
+            margin-top: 3rem;
+            padding: 0;
+        }
+        &__item{
+            padding:2rem;
+            background:#fff;
+            width: 100%;
+            margin-bottom: 3rem;
+            @include respond(tab-port){
+                box-sizing: border-box;
+            }
+        }
+    }
+}
+
+.review-user{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin-top:2rem;
+    & img{
+        width: 4rem;
+        height: 4rem;
+        border-radius: 50%;
+    }
+    &__detail{
+        margin-left: 1rem;
+        font-size: 1.3rem;
+    }
+}
+
+.detail-footer{
+    text-align: center;
+    padding:3rem 0 ;
+    & h2{
+        font-size: 2.5rem;
+        color:#333;
+    }
+}
+
+
+.form-pay{
+    color:black;
+}

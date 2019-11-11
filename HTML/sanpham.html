@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" >
+    <link rel="stylesheet" href="./main.css" />
+    <title>Sản phẩm</title>
+</head>
+<body>
+     <div class="header">
+          <div class="nav__logo">
+               <a href="index.html">
+                    <img src="../image/logoaia.png" />
+               </a>
+          </div>
+          <form  class="search">
+               <input type="text" placeholder="Search" class="search__input" id="searchText" name="searchText"  onkeyup="searchChange()"/>
+               <button type="button" class="search__button" >
+                    <i class="fas fa-search"></i>
+               </button>
+          </form>
+          <div class="box">
+               <div class="box__icon">
+                    <i class="fas fa-user"></i>
+               </div>
+               <div class="box__icon">
+                    <i class="fas fa-user-friends"></i>
+               </div>
+               <div class="box__icon">
+                    <i class="fas fa-users"></i>
+               </div>
+          </div>
+     </div>
+     <!-- sidebar -->
+     <div id="siderbar">
+            <div class="toggle" onClick="ShowSidebar()">
+                 <span></span>
+                 <span></span>
+                 <span></span>
+                 <span></span>
+                 <span></span>
+                 <span></span>
+            </div>
+            <ul class="side__list">
+               <li class="side__item">
+                    <i class="fas fa-map-marked"></i>
+                    Khu vực
+                    <ul>
+                         <li id="hanoi" onclick="filterData('hanoi','')">Hà Nội</li>
+                         <li id="dangnang" onclick="filterData('dangnang','')">Đà Nắng</li>
+                         <li id="hcm" onclick="filterData('hcm','')">Hồ Chí Minh</li>
+                    </ul>
+                </li>
+                <li class="side__item">
+                    <i class="fas fa-map-marked"></i>
+                    Loại bảo hiểm
+                    <ul>
+                         <li id="invest" onclick="filterData('','invest')">Đầu tư</li>
+                         <li id="save" onclick="filterData('','save')">Tích lũy</li>
+                         <li id="protect" onclick="filterData('','protect')">Bảo vệ</li>
+                    </ul>
+                </li>
+                <li class="side__item">
+                    <i class="fas fa-map-marked"></i>
+                    Mức giá
+                    <ul>
+                         <li>Cao Nhất</li>
+                         <li>Trung Bình</li>
+                         <li>Dước Trung Bình</li>
+                    </ul>
+               </li>
+            </ul>
+      </div>
+      <div class="story-service">
+           <div class="story-service__content">
+               <h2>Sản phẩm</h2>
+           </div>
+      </div>
+      <div class="text">
+          <h3>Giải pháp tài chính hoàn hảo với sự kết hợp linh hoạt của “bảo hiểm”, “tiết kiệm” và “đầu tư”</h3>
+      </div>
+      <div class="container" id="service">
+            <h2 class="title title--blue mt-5 mb-5">Sự lựa chọn của bạn</h2>
+            <div class="row" id="service-section">
+               <div class="col-md-4">
+                    <div class="service__card">
+                         <div class="service__img service__img--1"></div>
+                         <h2 class="service__name">
+                              <span class="service__name--1">An Toàn Tài Chính</span>
+                         </h2>
+                         <div class="service__list">
+                              <li class="service__item">
+                                   Tài chính vững vàng
+                              </li>
+                              <li class="service__item">
+                                   Đảm bảo tài chính
+                              </li>
+                              <li class="service__item">
+                              An toàn tài chính
+                         </li>
+                         </div>
+                         <div class="service__bottom">
+                              <a href="detail.html"><button type="button" class="btncard">Tư Vấn</button></a>
+                         </div>
+                    </div>
+               </div>
+               <div class="col-md-4">
+                    <div class="service__card">
+                    <div class="service__img service__img--2"></div>
+                    <h2 class="service__name">
+                         <span class="service__name--2">Bảo hiểm tai nạn</span>
+                    </h2>
+                    <div class="service__list">
+                         <li class="service__item">
+                              Giúp bạn vượt qua
+                         </li>
+                         <li class="service__item">
+                                   Hỗ trợ bạn
+                         </li>
+                         <li class="service__item">
+                                   Hạn chế các rủ do
+                         </li>
+                    </div>
+                    <div class="service__bottom">
+                              <a href="detail.html"><button type="button" class="btncard">Tư Vấn</button></a>
+                    </div>
+                    </div>
+               </div>
+               <div class="col-md-4">
+                    <div class="service__card">
+                         <div class="service__img service__img--3"></div>
+                         <h2 class="service__name">
+                              <span class="service__name--3">Bảo hiểm học vấn</span>
+                         </h2>
+                         <div class="service__list">
+                              <li class="service__item">
+                                   Quyền lợi học vấn
+                              </li>
+                              <li class="service__item">
+                                        Quyền lợi sức khỏe
+                              </li>
+                              <li class="service__item">
+                                        Và nhiều ưu lãi khác
+                              </li>
+                         </div>
+                         <div class="service__bottom">
+                                   <a href="detail.html"><button type="button" class="btncard">Tư Vấn</button></a>
+                         </div>
+                    </div>
+               </div>
+               <div class="col-md-4">
+                    <div class="service__card">
+                         <div class="service__img service__img--4"></div>
+                         <h2 class="service__name">
+                              <span class="service__name--4">Tiết kiệm và đầu tư</span>
+                         </h2>
+                         <div class="service__list">
+                              <li class="service__item">
+                                   Linh hoạt và chủ đông
+                              </li>
+                              <li class="service__item">
+                                        Đảm bảo tài chính
+                              </li>
+                              <li class="service__item">
+                                        Giảm thiểu rủ do
+                              </li>
+                         </div>
+                         <div class="service__bottom">
+                                   <a href="detail.html"><button type="button" class="btncard">Tư Vấn</button></a>
+                         </div>
+                    </div>
+               </div>
+               <div class="col-md-4">
+                    <div class="service__card">
+                         <div class="service__img service__img--5"></div>
+                         <h2 class="service__name">
+                              <span class="service__name--5">Bảo hiểm sức khỏe</span>
+                         </h2>
+                         <div class="service__list">
+                              <li class="service__item">
+                                   Có nhiều quyền lợi...
+                              </li>
+                              <li class="service__item">
+                                        Duy trì tài chính
+                              </li>
+                              <li class="service__item">
+                                        Hỗ trợ khi gặp rủ ro
+                              </li>
+                         </div>
+                         <div class="service__bottom">
+                                   <a href="detail.html"><button type="button" class="btncard">Tư Vấn</button></a>
+                         </div>
+                    </div>
+               </div>
+               <div class="col-md-4">
+                    <div class="service__card">
+                         <div class="service__img service__img--6"></div>
+                         <h2 class="service__name">
+                              <span class="service__name--6">Hưu Trí Vững Nghiệp</span>
+                         </h2>
+                         <div class="service__list">
+                              <li class="service__item">
+                                   Đảm bảo tài chính
+                              </li>
+                              <li class="service__item">
+                                        Hỗ trợ khách hàng khi gặp sự cố
+                              </li>
+                              <li class="service__item">
+                                   Và nhiều ưu đái khác
+                              </li>
+                         </div>
+                         <div class="service__bottom">
+                                   <a href="detail.html"><button type="button" class="btncard">Tư Vấn</button></a>
+                         </div>
+                    </div>
+               </div>
+               <div class="col-md-4">
+                    <div class="service__card">
+                         <div class="service__img service__img--7"></div>
+                         <h2 class="service__name">
+                              <span class="service__name--7">Kế hoặch hưu trí</span>
+                         </h2>
+                         <div class="service__list">
+                              <li class="service__item">
+                                   Quyền lơi bảo hiểm tử vong
+                              </li>
+                              <li class="service__item">
+                                   Quyền lợi hưu trí định kỳ
+                              </li>
+                              <li class="service__item">
+                                   Đầu tư an toàn và hiệu quả với Quỹ hưu trí tự nguyện
+                              </li>
+                         </div>
+                         <div class="service__bottom">
+                                   <a href="detail.html"><button type="button" class="btncard">Tư Vấn</button></a>
+                         </div>
+                    </div>
+               </div>
+               <div class="col-md-4">
+                    <div class="service__card">
+                         <div class="service__img service__img--8"></div>
+                         <h2 class="service__name">
+                              <span class="service__name--8">An Bình Thịnh Vượng</span>
+                         </h2>
+                         <div class="service__list">
+                              <li class="service__item">
+                                   Bảo vệ trước bệnh lý nghiêm trọng
+                              </li>
+                              <li class="service__item">
+                                   Quyền lợi trợ cấp viện phí
+                              </li>
+                              <li class="service__item">
+                                   Quyền lợi bảo hiểm khi Tử vong
+                              </li>
+                         </div>
+                         <div class="service__bottom">
+                                   <a href="detail.html"><button type="button" class="btncard">Tư Vấn</button></a>
+                         </div>
+                    </div>
+               </div>
+               <div class="col-md-4">
+                    <div class="service__card">
+                         <div class="service__img service__img--9"></div>
+                         <h2 class="service__name">
+                              <span class="service__name--9">An Phát Hưng Gia</span>
+                         </h2>
+                         <div class="service__list">
+                              <li class="service__item">
+                                   Quyền lợi bảo hiểm Tử vong 
+                              </li>
+                              <li class="service__item">
+                                   Quyền lợi bảo hiểm Bệnh hiểm nghèo
+                              </li>
+                              <li class="service__item">
+                                   Quyền lợi bảo hiểm Thương tật
+                              </li>
+                         </div>
+                         <div class="service__bottom">
+                                   <a href="detail.html"><button type="button" class="btncard">Tư Vấn</button></a>
+                         </div>
+                    </div>
+               </div>
+          </div>
+        </div>
+        <section class="space">
+              <h1>Đã có hơn 100.000 người tham gia cùng chúng tôi ở Việt Nam</h1>
+              <button type="button" class="btncard">Tư vấn ngay</button>
+        </section>
+        <!-- CONTACT -->
+        <section class="contact contact-sv">
+                     <form class="contact__form">
+                               <h2 class="title title--blue mb-5">Bạn phân vân không biêt chọn như thế nào</h2>
+                          <div class="form">
+                               <input class="form__input" type="email" placeholder="Email">
+                               <input class="form__input" type="text" placeholder="Name">
+                               <textarea  rows="5" placeholder="Content"></textarea>
+                          </div>
+                          <button type="button" class="btncard">Liên hệ</button>
+                     </form>
+                     <div class="contact-sv__media">
+                         <h2 class="title title--blue">or</h2>
+                     <div class="contact-sv__item">
+                          <i class="fab fa-facebook"></i>
+                     </div>
+                     <div class="contact-sv__item">
+                          <i class="fab fa-instagram"></i>
+                     </div>
+                     <div class="contact-sv__item">
+                          <i class="fab fa-twitter"></i>
+                     </div>
+                </div>
+          </section>
+          <!-- FOOTER -->
+          <footer class="footer">
+                    <div class="footer__logo">
+                         <img src="../image/logoaia.jpg"/>
+                    </div>
+                    <div class="footer__content">
+                         <div class="footer__box footer__box--right">
+                                  <ul>
+                                       <li>Công ty </li>
+                                       <li>Liên hệ </li>
+                                       <li>Các chính sách </li>
+                                       <li>Điều khoản</li>
+                                  </ul>
+                         </div>
+                         <div class="footer__box footer__box--left">
+                               <p>AIA Việt Nam là thành viên của Tập đoàn AIA - tập đoàn bảo 
+                                    hiểm nhân thọ độc lập, có nguồn gốc châu Á lớn nhất thế giới được niêm yết.
+                               </p>
+                         </div>
+                    </div>
+               </footer>
+     <!-- CODE JS -->
+     <script>
+               function ShowSidebar() {
+                    document.getElementById("siderbar").classList.toggle("active");
+               }
+
+               // data
+               const dataService = [
+                    {
+                         name:"An toàn tài chính",
+                         list:{
+                              item1:"Tài chính vững vàng",
+                              item2:"An toàn tài chính",
+                              item3:"Đảm bảo tài chính"
+                         },
+                         type:"protect",
+                         area:"hanoi"
+                    },
+                    {
+                         name:"Bảo hiểm tai nạn",
+                         list:{
+                              item1:"Hỗ trợ y tế",
+                              item2:"Cung cấp tài chính",
+                              item3:"Hạn chế rủ do"
+                         },
+                         type:"invest",
+                         area:"dangnang"
+                    },
+                    {
+                         name:"Bảo hiểm học vấn",
+                         list:{
+                              item1:"Quyền lợi học vấn",
+                              item2:" Quyền lợi sức khỏe",
+                              item3:"Và nhiều ưu lãi khác"
+                         },
+                         type:"invest",
+                         area:"hanoi"
+                    },
+                    {
+                         name:"Tiết kiệm và đầu tư",
+                         list:{
+                              item1:" Linh hoạt và chủ đông",
+                              item2:" Đảm bảo tài chính",
+                              item3:"Giảm thiểu rủ do"
+                         },
+                         type:"save",
+                         area:"hanoi"
+                    },
+                    {
+                         name:"Bảo hiểm sức khỏe",
+                         list:{
+                              item1:"Có nhiều quyền lợi...",
+                              item2:" Duy trì tài chính",
+                              item3:"Hỗ trợ khi gặp rủ ro"
+                         },
+                         type:"protect",
+                         area:"hcm"
+                    },
+                    {
+                         name:"Hưu Trí Vững Nghiệp",
+                         list:{
+                              item1:"Đảm bảo tài chính",
+                              item2:"Hỗ trợ khách hàng khi gặp sự cố",
+                              item3:"Và nhiều ưu đái khác"
+                         },
+                         type:"save",
+                         area:"dangnang"
+                    },
+                    {
+                         name:"An Bình Thịnh Vượng",
+                         list:{
+                              item1:"Bảo vệ trước bệnh lý nghiêm trọng",
+                              item2:"Quyền lợi trợ cấp viện phí",
+                              item3:"Quyền lợi bảo hiểm khi Tử vong"
+                         },
+                         type:"protect",
+                         area:"hanoi"
+                    },
+                    {
+                         name:"An Phát Hưng Gia",
+                         list:{
+                              item1:"Quyền lợi bảo hiểm Tử vong",
+                              item2:"Quyền lợi bảo hiểm Bệnh hiểm nghèo",
+                              item3:"Quyền lợi bảo hiểm Thương tật"
+                         },
+                         type:"protect",
+                         area:"hanoi"
+                    },
+                ];
+               function renderData(datax){
+                    let idRender = document.getElementById("service-section");
+                    let datas =   datax.map((item, index)=>{
+                       return(
+                          `
+                               <div class="col-md-4">
+                                   <div class="service__card">
+                                        <div class="service__img service__img--${index+1}"> </div>
+                                        <div class="service__name service__name--${index+1}">
+                                             <span>${item.name}</span>
+                                        </div>
+                                        <ul class="service__list">
+                                             <li class="service__item">${item.list.item1}</li>
+                                             <li class="service__item">${item.list.item2}</li>
+                                             <li class="service__item">${item.list.item3}</li>
+                                        </ul>
+                                        <div class="service__bottom">
+                                             <a href="detail.html">
+                                                  <button type="button" class="btncard">${"Tư Vấn"} </button>
+                                             </a>
+                                        </div>
+                                   </div>
+                               </div>
+                           `
+                       )
+                     }) 
+                   idRender.innerHTML = datas.join('');
+               }
+
+               function filterData(x,y){
+                    let data = dataService.filter(item=>{
+                         return item.area === x || item.type ===y;
+                    })
+                    renderData(data);
+                    ShowSidebar();
+               }
+
+               function searchChange(e){
+                    let data =[];
+                    let x = document.getElementById("searchText").value;
+                    dataService.forEach(item=>{
+                           if(item.name.toLowerCase().indexOf(x.toLowerCase()) !== -1 || item.area.toLowerCase().indexOf(x.toLowerCase()) !==-1){
+                               return data.push(item);
+                           }
+                    })
+                    renderData(data);
+               }
+               
+         </script>
+       <!-- Link boostrap -->
+       <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" ></script>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" ></script>
+       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>

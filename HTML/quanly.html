@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css">
+    <link rel="stylesheet" href="./main.css" />
+    <title>Quản lý thông tin</title>
+</head>
+<body onload="renderData()">
+      <!-- HEADER -->
+     <div class="header">
+          <div class="nav__logo">
+               <a href="index.html">
+                    <img src="../image/logoaia.png" />
+               </a>
+          </div>
+          <form  class="search">
+               <input type="text" placeholder="Search" class="search__input" id="searchText" name="searchText"  onkeyup="searchData()"/>
+               <button type="button" class="search__button" >
+                    <i class="fas fa-search"></i>
+               </button>
+          </form>
+          <div class="box">
+               <div class="box__icon">
+                    <i class="fas fa-user"></i>
+               </div>
+               <div class="box__icon">
+                    <i class="fas fa-user-friends"></i>
+               </div>
+               <div class="box__icon">
+                    <i class="fas fa-users"></i>
+               </div>
+          </div>
+     </div>
+    <!-- CONTENT-->
+    <div class="detail-page">
+        <!--SIDEBAR-->
+        <div class="siderbar__detail">
+                <ul class="side__list">
+                    <li class="side__item">
+                        <a class="side__link" href="index.html">
+                                <i class="fas fa-home"></i>
+                         Home</a>
+                    </li>
+                    <li class="side__item">
+                            <a class="side__link"  onclick="SortData()">
+                                    <i class="fas fa-home"></i>
+                            Sort A-Z</a>
+                    </li>
+                    <li class="side__item">
+                              <a class="side__link"  onclick="SortByYear()">
+                                      <i class="fas fa-home"></i>
+                              Sort Year</a>
+                      </li>
+                </ul>
+         </div>
+         <!-- content -->
+         <main class="content-admin">
+             <section class="admin__content">
+                <table style="width:100%">
+                    <thead>
+                    <tr>
+                        <th>STT</th>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Khu vực</th>
+                        <th>ID Hồ sơ</th>
+                        <th>Ngày mua</th>
+                        <th>Thời hạn(năm)</th>
+                    </tr>
+                </thead>
+                <tbody id="bodyTable">
+                    <tr>
+                         <td>1</td>
+                         <td>83863</td>
+                         <td>Vi A Sáng</td>
+                         <td>Hà Nội</td>
+                         <td>8936hsd</td>
+                         <td>20/3/2019</td>
+                         <td>20/3/2019</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>83863</td>
+                        <td>Vi A Sáng</td>
+                        <td>Hà Nội</td>
+                        <td>8936hsd</td>
+                        <td>20/3/2019</td>
+                        <td>20/3/2019</td>
+                   </tr>
+                   <tr>
+                    <td>1</td>
+                    <td>83863</td>
+                    <td>Vi A Sáng</td>
+                    <td>Hà Nội</td>
+                    <td>8936hsd</td>
+                    <td>20/3/2019</td>
+                    <td>20/3/2019</td>
+               </tr>
+                </tbody>
+                 </table>
+             </section>
+         </main>
+    </div>
+    <script>
+        const data =[
+             {
+                  id:"KH11",
+                  name:"Vi A Sáng",
+                  area:"Hà Nội",
+                  idHS:"HS001",
+                  dateBuy:"11/3/2019",
+                  thoihan:20
+             },
+             {
+                  id:"KH12",
+                  name:"Nguyễn Thanh Văn",
+                  area:"Đà Nắng",
+                  idHS:"HS0045",
+                  dateBuy:"10/06/2019",
+                  thoihan:15
+             },
+             {
+                  id:"KH17",
+                  name:"Nguyễn Văn X",
+                  area:"HCM",
+                  idHS:"HS00573",
+                  dateBuy:"09/11/2019",
+                  thoihan:30
+             },
+             {
+                  id:"KH19",
+                  name:"Nguyễn Văn D",
+                  area:"Hà Nội",
+                  idHS:"HS00105",
+                  dateBuy:"05/19/2019",
+                  thoihan:20
+             },
+             {
+                  id:"KH168",
+                  name:"Nguyễn Văn K",
+                  area:"HCM",
+                  idHS:"HS001",
+                  dateBuy:"7/09/2019",
+                  thoihan:10
+             },
+        ];
+
+        function renderData(x = data){
+             let tble = document.getElementById("bodyTable");
+            let dataTable =  x.map((item, index)=>{
+                  return(`
+                      <tr>
+                         <td>${index+1}</td>
+                         <td>${item.id}</td>
+                         <td>${item.name}</td>
+                         <td>${item.area}</td>
+                         <td>${item.idHS}</td>
+                         <td>${item.dateBuy}</td>
+                         <td>${item.thoihan}</td>
+                      </tr>
+                  `)
+             });
+            tble.innerHTML = dataTable.join('');
+        };
+     function searchData(){
+          let DATA = [];
+          let x= document.getElementById("searchText").value;
+          data.forEach(item=>{
+               if(item.name.toLowerCase().indexOf(x.toLowerCase()) !== -1 
+                   || item.area.toLowerCase().indexOf(x.toLowerCase()) !==-1
+                   || item.idHS.toLowerCase().indexOf(x.toLowerCase()) !==-1
+                   || item.id.toLowerCase().indexOf(x.toLowerCase()) !==-1){
+                    return DATA.push(item);
+               }
+          });
+        renderData(DATA);
+     };
+     function SortData(){
+          let x = document.getElementById("searchText").value;
+          data.sort((a,b)=>{
+               let aName = a.name.split(' ');
+               let bName = b.name.split(' ');
+               var nameA = aName[aName.length-1].toUpperCase(); // bỏ qua hoa thường
+               var nameB = bName[bName.length-1].toUpperCase(); // bỏ qua hoa thường
+               if (nameA < nameB) {
+                    return -1;
+               }
+               if (nameA > nameB) {
+                    return 1;
+               }
+               return 0;
+          })
+         renderData(data);
+     }
+
+     function SortByYear(){
+          let x = document.getElementById("searchText").value;
+          let day =3.1556926 * Math.pow(10,10);
+          data.sort((a,b)=>{
+               let msecA = (day*a.thoihan) + Date.parse(a.dateBuy);
+               let msecB = (day * b.thoihan) + Date.parse(b.dateBuy);
+               return msecA - msecB;
+          })
+          renderData(data);
+     }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,154 @@
+.header{
+        font-size: 1.5rem;
+        height: 7rem;
+        background-color:$white--1;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: 0 .5rem 1rem rgba(0,0,0,0.5);
+}
+
+
+.box{
+    align-self: stretch;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include respond(phone){
+            display: none;
+    }
+    &__icon{
+        padding: 0 2rem;
+        cursor: pointer;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        & i{
+            font-size: 1.5rem;
+        }
+    }
+    & > *:hover{
+        background:rgb(179, 176, 176);
+    }
+}
+
+// story
+.story-service{
+    width:100%;
+    height: 50vh;
+    background-image: linear-gradient(105deg, transparent 50%, rgba(255, 255, 255, 0.9) 0, rgba(225, 225,225, 0.4) 50%), 
+    url("../image/header-service.jpg");
+    background-position: center;
+    background-size:cover;
+    position: relative;
+    &__content{
+        width: 50%;
+        & h2{
+            position: absolute;
+            bottom: 0;
+            font-size: 4rem;
+            color:rgba($blue--2, 1);
+        }
+    }
+}
+// text
+.text{
+    background:#fff;
+    box-shadow: 0 .5em 1rem rgba(0, 0, 0, 0.3);
+    text-align: center;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    & h3{
+        text-transform: uppercase;
+        color:$blue--2;
+    }
+}
+#service{
+    padding:6rem 0;
+    text-align: center;
+    @include respond(phone){
+            padding: 0;
+            width:100%;
+
+    }
+}
+
+.row{
+    @include respond(phone){
+      margin: 0;
+    }
+}
+
+
+.contact-sv{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: #f6f6f6;
+    @include respond(phone){
+        flex-direction: column;
+    }
+    &__media{
+        width: 35%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        @include respond(phone){
+            width: 90%;
+            margin-top: 5rem;
+        }
+    }
+    &__item{
+        width: 5rem;
+        height: 5rem;
+        border-radius: 50%;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        cursor: pointer;
+        & i{
+            font-size: 3rem;
+            color:$blue--2;
+        }
+        &:hover{
+            background: rgba(255,255,255,0.1);
+            transform: translateY(2px);
+        }
+        &::after{
+            content:"";
+            position: absolute;
+            top:0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            background:#fff;
+            z-index: -1;
+            transition: .5s;
+        }
+        &:hover::after{
+            transform: scale(1.4);
+            opacity: 0;
+        }
+    }
+}
+
+.space{
+    background-image: linear-gradient(to right, rgba($blue--1, .5), rgba($blue--2, 0.5)),
+                     url("../image/header-service.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+   padding: 8rem 0;
+   text-align: center;
+   & h1{
+       color:#fff;
+       font-size: 3rem;
+   }
+}
+
+
+

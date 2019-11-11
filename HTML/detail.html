@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css">
+    <link rel="stylesheet" href="main.css" />
+    <title>Chi tiết sản phẩm</title>
+    <script>
+          function showModal(){
+            let modal = document.querySelector(".modal");
+            // if (modal.style.display === "none") {
+            //      modal.style.display = "block";
+            // } else {
+            //      modal.style.display = "none";
+            // }
+            if(modal.hidden === true){
+                 modal.hidden = false
+            }
+            else{
+                 modal.hidden = true;
+            }
+          }
+      </script>
+</head>
+<body>
+          <header class="header">
+               <div class="nav__logo">
+                    <a href="index.html">
+                         <img src="../image/logoaia.png" />
+                    </a>
+               </div>
+                <form action="#" class="search">
+                    <input type="text" placeholder="Search" class="search__input" />
+                    <button class="search__button">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </form>
+                 <div class="box">
+                    <div class="box__icon">
+                         <i class="fas fa-user"></i>
+                    </div>
+                    <div class="box__icon">
+                         <i class="fas fa-user-friends"></i>
+                    </div>
+                    <div class="box__icon">
+                         <i class="fas fa-users"></i>
+                    </div>
+                 </div>
+          </header>
+         <div class="detail-page">
+                <!--SIDEBAR-->
+                <div class="siderbar__detail">
+                        <ul class="side__list">
+                            <li class="side__item">
+                                <a class="side__link" href="index.html">
+                                        <i class="fas fa-home"></i>
+                               Trang chủ</a>
+                            </li>
+                            <li class="side__item">
+                                    <a class="side__link" href="sanpham.html">
+                                    <i class="fab fa-servicestack"></i>
+                                   Dịch vụ
+                                </a>
+                            </li>
+                            <li class="side__item">
+                                   <a class="side__link">
+                                    <i class="fas fa-credit-card"></i>
+                                           Thanh toán  </a>
+                           </li>
+                        </ul>
+                </div>
+                <!--DETAIL CONTENT-->
+                  <main class="detail-page__content">
+                     <div class="detail-page__header">
+                           <figure class="detail-page__gallery">
+                                <img src="../image/detail1.jpg"/>
+                           </figure>
+                           <figure class="detail-page__gallery">
+                               <img src="../image/detail2.jpg" />
+                           </figure>
+                           <figure class="detail-page__gallery">
+                                <img src="../image/detail3.jpg"/>
+                           </figure>
+                     </div>
+                     <!--OVervie-->
+                        <div class="overview">
+                            <h3 class="overview__header">Trọn đời yêu thương</h3>
+                            <div class="overview__item">
+                                    <h5 class="overview__item--main">5tr</h5>
+                                    <p class="overview__item--sub">Đăng kí</p>
+                            </div>
+                        </div>
+                        <!--detail-->
+                        <section class="detail-page__box">
+                             <div class="box__right">
+                                   <p class="box__right__header">
+                                        Trong dòng chảy của cuộc sống hiện đại, luôn có những ẩn họa rình rập, 
+                                        khiến cho chúng ta phải chống đỡ để bảo vệ những người thân yêu -
+                                         Nhưng sẽ ra sao nếu tai họa xảy đến với chính chúng ta?
+                                        Giải pháp tài chính tích hợp Trọn đời yêu thương với nhiều
+                                         ưu điểm hấp dẫn, linh hoạt trong gói chăm sóc sức khỏe Vàng 
+                                         và Kim Cương sẽ là tấm khiên vững chắc, mang lại sự bình an cho cả gia đình chỉ trong 1 Hợp đồng duy nhất.
+                                   </p>
+                                   <ul class="box__right__list">
+                                        <li><i class="fas fa-hand-holding-heart"></i>Hỗ trợ tài chính khi bị bệnh</li>
+                                        <li><i class="fas fa-hand-holding-heart"></i>Tích lũy tài chính để đầu tư tương lai</li>
+                                        <li><i class="fas fa-hand-holding-heart"></i>Tạo thói quen tiết kiệm có kỷ luật</li>
+                                        <li><i class="fas fa-hand-holding-heart"></i>Đạt được mục tiêu dài hạn</li>
+                                        <li><i class="fas fa-hand-holding-heart"></i>Bảo hiểm chăm sóc y tế</li>
+                                        <li><i class="fas fa-hand-holding-heart"></i>Bảo hiểm tai nạn toàn diện</li>
+
+                                   </ul>
+                                   <p>
+                                        Một gia đình tham gia Hợp đồng Trọn Đời Yêu Thương với các thông tin như sau:<br/>
+                                        Mẹ: 30 tuổi là Bên mua bảo hiểm <br/>
+                                        Bố: 34 tuổi là Người trụ cột của gia đình <br/>
+                                        Con: bé trai 7 tuổi <br/>
+                                        Số tiền bảo hiểm Hợp đồng chính: 1.2 tỷ đồng <br/>
+                                        Thời hạn đóng phí 10 năm <br/>
+                                   </p> 
+                             </div>
+                             <div class="box__left">
+                                 <figure class="box__left__item">
+                                        <h2>Chúng tôi đã dùng và thấy rất hài lòng với dịch vụ này !</h2>
+                                        <div class="review-user">
+                                             <img src="https://cdn.pixabay.com/photo/2017/08/01/20/52/people-2567915__340.jpg" />
+                                             <div class="review-user__detail">
+                                                  <h5>NSAGA SGASGDG</h5>
+                                                  <span>26 -10 -2019</span>
+                                             </div>
+                                        </div>
+                                 </figure>
+                                 <figure class="box__left__item">
+                                    <h2>Tôi chưa dùng và muốn mọi người cho nhận xét.</h2>
+                                    <div class="review-user">
+                                         <img src="https://cdn.pixabay.com/photo/2017/08/01/20/52/people-2567915__340.jpg" />
+                                         <div class="review-user__detail">
+                                              <h5>NSAGA SGASGDG</h5>
+                                              <span>26 -10 -2019</span>
+                                         </div>
+                                    </div>
+                                 </figure>
+                                 <a href="#" class="link">Xem thêm</a>
+                             </div>
+                        </section>
+                        <!-- PAY-FORM -->
+                        <section class="modal" hidden>
+                              <h3 class="modal__title">Đăng ký</h3>
+                              <div class="modal__content">
+                                      <form class="form-pay">
+                                            <h4>Tên dịch vụ: Trọn đời yêu thương</h4>
+                                            <br/>
+                                            <h4>Số tiền 5000000 VND</h4>
+                                            <br/>
+                                            <h4>Thời gian 10 năm(từ ngày đăng ký)</h4>
+                                            <br/>
+                                            <label>Hình thức thanh toán</label>
+                                            <select>
+                                                  <i class="fab fa-cc-visa">VISA</i> <option value="visa"><i class="fab fa-cc-visa">VISA</i></option>
+                                                  <option value="atm"><i class="fas fa-credit-card" ></i>ATM</option>
+                                                  <option value="cash"><i class="fas fa-file-invoice-dollar"></i>Nộp tiền mặt</option>
+                                                  <option value="cash"><i class="fas fa-file-invoice-dollar"></i>QRCODE</option>
+                                             </select>
+                                             <br/>
+                                             <br/>  <label>Tôi đồng ý với những diều khoản trên</label>
+                                             <input type="checkbox">
+                                             <div class="modal__aciton">
+                                                       <button type="button" class="btt btt--red" onclick="showModal()" >Cancel</button>
+                                                       <button type="button" class="btncard ml-2" onclick="showModal()">Ok</button>
+                                             </div>
+                                      </form>
+                              </div>
+                       </section>
+                        <!--footed-->
+                        <div class="detail-footer">
+                              <h2>Đăng kí ngay hôm nay chúng tôi đang chờ bạn !</h2>
+                              <button class="btncard" onclick="showModal()">Đăng ký</button>
+                        </div>
+                    </main>
+         </div>
+</body>
+</html>
